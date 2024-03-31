@@ -10,9 +10,13 @@ int main()
     // int respuesta;
     std::cout << "Ingrese un numero entero: ";
     std::cin >> numero;
+    std::cout << "La direccion de la variable: " << &numero << std::endl;
+    std::cout << "El contenido de la variable: " << numero << std::endl;
+
     // respuesta = potencia(numero, 2);
     // std::cout << "El numero elevado a 2 es: " << respuesta << std::endl;
     potencia(numero, 2);
+
     return 0;
 }
 /*
