@@ -3,20 +3,37 @@
 
 // int potencia(int base, int exponente);
 void potencia(int base, int exponente);
+void invertir(int *a, int *b);
+void orden(int *a, int *b);
 
 int main()
 {
-    int numero;
-    // int respuesta;
-    std::cout << "Ingrese un numero entero: ";
-    std::cin >> numero;
-    std::cout << "La direccion de la variable: " << &numero << std::endl;
-    std::cout << "El contenido de la variable: " << numero << std::endl;
+    int numero1, numero2;
 
-    // respuesta = potencia(numero, 2);
-    // std::cout << "El numero elevado a 2 es: " << respuesta << std::endl;
-    potencia(numero, 2);
+    std::cout << "Ingrese el primer numero entero: ";
+    std::cin >> numero1;
 
+    std::cout << "Ingrese el segundo numero entero: ";
+    std::cin >> numero2;
+
+    std::cout << "\nNumeros ingresados antes de ordenar: " << std::endl;
+    std::cout << "Numero 1: " << numero1 << std::endl;
+    std::cout << "Numero 2: " << numero2 << std::endl;
+
+    std::cout << "\nEl cuadrado del primer numero es: ";
+    potencia(numero1, 2);
+
+    orden(&numero1, &numero2);
+
+    std::cout << "\nNumeros ordenados: " << std::endl;
+    std::cout << "Numero 1: " << numero1 << std::endl;
+    std::cout << "Numero 2: " << numero2 << std::endl;
+
+    invertir(&numero1, &numero2);
+
+    std::cout << "\nNumeros invertidos: " << std::endl;
+    std::cout << "Numero 1: " << numero1 << std::endl;
+    std::cout << "Numero 2: " << numero2 << std::endl;
     return 0;
 }
 /*
@@ -38,4 +55,21 @@ void potencia(int base, int exponente)
         resultado *= base;
     }
     std::cout << "El numero elevado a 2 es: " << resultado << std::endl;
+}
+
+void invertir(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void orden(int *a, int *b)
+{
+    if (*a > *b)
+    {
+        int temp = *a;
+        *a = *b;
+        *b = temp;
+    }
 }
