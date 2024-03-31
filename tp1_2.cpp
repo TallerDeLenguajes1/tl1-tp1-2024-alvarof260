@@ -15,7 +15,11 @@ int main()
 
     cuadrado(np);
 
-    printf("El cuadrado del numero es: %d", cuadrado1(n));
+    printf("%d", n);
+
+    /* cuadrado = cuadrado1(n);
+
+    printf("El cuadrado del numero es: %d", cuadrado); */
 
 
 
@@ -34,5 +38,4 @@ int cuadrado1(int n)
 void cuadrado(int *n)
 {
     *n *= *n;
-    printf("Segundo cuadrado: %d", *n);
 }
