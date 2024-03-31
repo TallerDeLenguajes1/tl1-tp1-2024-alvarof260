@@ -21,9 +21,6 @@ int main()
 
     printf("El cuadrado del numero es: %d", cuadrado); */
 
-
-
-
     return 0;
 }
 
