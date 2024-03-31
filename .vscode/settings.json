@@ -1,6 +1,11 @@
 {
     "cSpell.words": [
         "Hola",
-        "mundo"
-    ]
+        "mundo",
+        "Respuesta"
+    ],
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 }
